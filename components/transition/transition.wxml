@@ -1,0 +1,9 @@
+<view
+  wx:if="{{ isShow }}"
+  animation="{{ animationData }}"
+  class="custom-class {{ classes }}"
+  style="transition-duration:{{ currentDuration }}ms;{{ customStyle }}"
+  bindtap="emitClick"
+>
+  <slot></slot>
+</view>
